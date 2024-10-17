@@ -1,0 +1,19 @@
+.div1{
+    background: linear-gradient(to bottom right, #1a8cf7, #0f00e2);
+    height: 70vh;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.div2{
+    background: white;
+    border-radius: 15px;
+    height: 30vh;
+    width: 50%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

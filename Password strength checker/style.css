@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: sans-serif;
+    padding: 15px;
+    margin-top: 6rem;
+}
+input{
+    width: 200px;
+    border: 2px solid #1b5dec;
+    border-radius: 5px;
+    background-color: transparent;
+    box-shadow: 0px 0px 15px #1b5dec;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+input:focus{
+    outline: none !important;
+}
+form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+}
+.bar{
+    width: 200px;
+    height: 5px;
+    display: flex;
+    flex-direction: row;
+    margin:auto;
+}
+.pass-length{
+    height: 100%;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px #000 ;
+}
+.bad{
+    width: 34%;
+    background-color: red;
+}
+.good{
+    width: 68%;
+    background-color: orangered;
+}
+.excellent{
+    width: 100%;
+    background-color: green;
+}

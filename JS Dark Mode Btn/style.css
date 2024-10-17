@@ -1,0 +1,53 @@
+:root{
+    --bg:#fff;
+    --label:#000;
+    --btn:#fff;
+}
+.darkmode{
+    --bg:#000;
+    --label:#fff;
+    --btn:#000;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.dark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--bg);
+    width: 100%;
+    transition: 0.5s;
+}
+.check:checked + .label .btn{
+    transform: translateX(26px);
+}
+.check{
+    cursor: pointer;
+    width:45px;
+    height: 15px;
+    opacity:0;
+    position: absolute;
+    z-index: 100;
+}
+.label{
+    width: 40px;
+    height: 14px;
+    background: var(--label);
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+}
+.btn{
+    cursor: pointer;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: var(--btn);
+    transition: 0.2s linear;
+}

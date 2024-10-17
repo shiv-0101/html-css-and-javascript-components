@@ -1,0 +1,48 @@
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.content{
+    width: 50%;
+    font-family: sans-serif;
+    margin: 2rem auto;
+    font-size: 18px;
+    line-height: 2rem;
+    
+}
+.sidebar{
+    position: absolute;
+    top: 10%;
+    right: 3%;
+    height: 50vh;
+    width: 40vh;
+    background: linear-gradient(to bottom right, #0dcfff, #012cc7);
+    border-radius: 15px;
+    position: fixed;
+}
+.sidebar h1{
+    text-align: center;
+    color: #fff;
+    font-family: sans-serif;
+}
+.newsletter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.newsletter input{
+    padding: 8px 15px;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+}
+::placeholder{
+    color: #fff;
+    font-size: 13px;
+}
+.newsletter button{
+    width: fit-content;
+    padding: 8px 12px;
+    margin-top: 15px;
+}

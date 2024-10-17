@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+button{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    padding: 50px 105px;
+    border-radius: 95px;
+    font-size: 2.5rem;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2.5px solid #000000;
+    overflow: hidden;
+}
+span{
+    background-color: #0ba8cb;
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    border-radius: 45px;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+button:hover{
+    color: #fff;
+}
+button:hover span{
+    width: 100%;
+    transition: 0.3s;
+}

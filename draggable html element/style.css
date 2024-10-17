@@ -1,0 +1,16 @@
+.draggable-el{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #03038e;
+    padding: 20px 50px;
+    cursor: grab;
+    border-radius: 20px;
+}
+p{
+    color: #fff;
+    font-size: 24px;
+    font-family: sans-serif;
+    user-select: none;
+}

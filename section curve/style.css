@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.curve{
+    margin-top: 0rem;
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: .4s;
+}
+.curve::before{
+    position: absolute;
+    right: -200px;
+    left: -200px;
+    top: -200px;
+    bottom: 0px;
+    border-radius: 100%;
+    content: ' ';
+    background: black;
+    
+}
+
+ h1{
+    font-size: 5rem;
+    color: #fff;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}

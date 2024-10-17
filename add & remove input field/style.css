@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+.container{
+    border-radius: 6px;
+    background-color: #fff;
+    padding: 40px;
+    max-width: fit-content;
+    box-shadow: 5px 4px 15px #0000005e;
+}
+
+input{
+    padding: 5px;
+    margin: 8px;
+    border: 1px solid #646464;
+}
+
+input:focus {
+    border: 2px solid #00a8f6;
+}
+
+.btn{
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 5px 8px;
+    background-color: #fcfeff;
+}

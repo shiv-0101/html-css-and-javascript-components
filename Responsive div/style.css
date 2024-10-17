@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #222;
+    min-height: max-content;
+}
+.test{
+    margin: 5rem 0 0 0;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 300px 300px;
+    gap: 30px;
+}
+.box{
+    background: #1e2944;
+    border-radius: 10px;
+    border: 2px solid #fff;
+}
+.box:nth-child(3){
+    height: 20rem;
+}
+.box:nth-child(4){
+    height: 20rem;
+}
+.box p{
+    color: #fff;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+}
+@media (max-width: 700px){
+    .test{
+        grid-template-columns: minmax(100px, 1fr);
+    } 
+}

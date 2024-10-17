@@ -1,0 +1,66 @@
+body{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+
+h1,h2,h3{
+    margin: 10px;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+
+p{  margin: 3px 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.card{
+    background-color:transparent ;
+    height: 400px;
+    width: 400px;
+    perspective: 1000px;   
+}
+.flip{
+    padding-top: 5rem;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+}
+button{
+    background-color:#638ee4 ;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.card:hover .flip{
+    transform: rotateY(180deg);
+}
+.front, .back{
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.front{
+    background-color: transparent;
+    color: black;
+}
+.back{
+    transform: rotateY(180deg);
+    background-color: #121c30;
+    color: #fff;
+}

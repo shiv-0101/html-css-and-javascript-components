@@ -1,0 +1,48 @@
+@import url(//db.onlinewebfonts.com/c/f7afe66fe9d022d7dc7fd57e4adc078f?family=GT+Walsheim+Pro+Bold);
+body{
+    background-color: #ffe4fdec;
+    margin: 0;
+    padding: 0;
+    font-family: "GT Walsheim Pro Bold", sans-serif;
+}
+.container{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container h1{
+    font-size: 6rem;
+    color: #001e60;
+    margin: 10px;
+}
+.container p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: #001e60;
+    margin: 0;
+    width: 40%;
+    text-align: center;
+}
+button{
+    font-weight: bold;
+    background-color: #001e60;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: none;
+    margin: 20px;
+    transition: .2s ease;
+}
+button:hover{
+    background-color: #e1aa13;
+    cursor: pointer;
+}
+img{
+    height: 250px;
+    position: relative;
+    top: -20%;
+    left: 28%;
+    margin: 0 auto;
+}

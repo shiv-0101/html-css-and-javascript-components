@@ -1,0 +1,24 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.ball{
+    height: 165px;
+    width: 165px;
+    background: #000000;
+    color: white;
+    border-radius: 50%;
+    animation: bounce 700ms alternate infinite cubic-bezier(.2, .65, .6, .1);  
+}
+@keyframes bounce {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-40px);
+    }
+}

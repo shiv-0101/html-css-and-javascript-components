@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz With Radio Buttons</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="radio-input">
+      <div class="info">
+        <span class="question">What is Capital of New Jersey?</span>
+        <span class="steps">1/5</span>
+      </div>
+      <input type="radio" id="value-1" name="value-radio" value="value-1" />
+      <label for="value-1">New York</label>
+      <input type="radio" id="value-2" name="value-radio" value="value-2" />
+      <label for="value-2">Trenton</label>
+      <input type="radio" id="value-3" name="value-radio" value="value-3" />
+      <label for="value-3">San Diago</label>
+
+      <span class="result success">Correct Answer👍</span>
+      <span class="result error">Wrong Answer🙄</span>
+    </div>
+  </body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var radioInputs = document.querySelectorAll(".radio-input input");
+      radioInputs.forEach(function (input) {
+        input.addEventListener("change", function () {
+          var selectedInput = document.querySelector(
+            ".radio-input input:checked"
+          );
+          var successMessage = document.querySelector(".result.success");
+          var errorMessage = document.querySelector(".result.error");
+          successMessage.style.display = "none";
+          errorMessage.style.display = "none";
+          if (selectedInput && selectedInput.value === "value-2") {
+            successMessage.style.display = "flex";
+          } else {
+            errorMessage.style.display = "flex";
+          }
+        });
+      });
+    });
+  </script>
+</html>

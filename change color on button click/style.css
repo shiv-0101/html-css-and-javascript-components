@@ -1,0 +1,32 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#color{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+button{
+    font-size: 24px;
+    padding: 12px 24px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+button:active{
+    transform: scale(0.94);
+}
+

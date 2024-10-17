@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+span{
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    animation: ripple 0.6s linear infinite;
+    margin: 160px auto;
+}
+
+@keyframes ripple {
+    0%{
+    box-shadow:0 0 0 0 #3ff906,
+               0 0 0 20px #68e420cf,
+               0 0 0 40px #1af8307f,
+               0 0 0 60px #46ef243c
+} 
+    100%{
+        box-shadow:0 0 0 20px #3ff906,
+        0 0 0 40px #68e420cf,
+        0 0 0 60px #1af8307f,
+        0 0 0 80px #46ef243c   
+    }
+    
+}

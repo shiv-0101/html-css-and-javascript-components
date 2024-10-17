@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add & Remove Input Field | Dynamic Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div id="input_fields">
+          <input type="text" name="dynamic_field[]" />
+          <br />
+        </div>
+      </form>
+
+      <div class="btns">
+        <input
+          class="btn"
+          type="button"
+          value="Add Field"
+          onclick="addField()"
+        />
+        <input
+          class="btn"
+          type="button"
+          value="Remove Field"
+          onclick="removeField()"
+        />
+      </div>
+    </div>
+    <script src="main.js" type="text/javascript"></script>
+  </body>
+</html>

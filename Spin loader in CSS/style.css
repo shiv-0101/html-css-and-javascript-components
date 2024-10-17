@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    margin: 250px auto;
+    display: flex;
+    justify-content: center;
+    background-color: #fff; 
+}
+.spin{
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+.spin div{
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 10px solid transparent;
+    border-top-color: #0b76f1;
+    border-radius: 50%;
+    animation: letspin1 1.2s linear infinite;
+}
+.spin div:nth-child(2){
+    border: 8px solid transparent;
+    border-bottom-color: #0b76f1;
+}
+@keyframes letspin1{
+    0%{
+        transform: rotate(0deg);
+        border-width: 10px;
+    }
+    50%{
+        transform: rotate(180deg);
+        border-width: 1px;
+    }
+    100%{
+        transform: rotate(360deg);
+        border-width: 10px;
+    }
+}

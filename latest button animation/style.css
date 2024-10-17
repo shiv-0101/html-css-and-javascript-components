@@ -1,0 +1,27 @@
+body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+button{
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: .8em 2em;
+    transition: .2s;
+    cursor: pointer;
+}
+button:hover{
+    color: #000;
+    transform: translate(-0.25rem, -0.25rem);
+    background: #ff90e8;
+    box-shadow: 0.25rem 0.25rem #000;
+}
+
+/* when mouse button is pressed */
+button:active{
+    transform: translate(0);
+    box-shadow: none;
+}

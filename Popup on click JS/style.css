@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+button{
+    padding: 8px 15px;
+    background: #1c1ce4;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px #00000075;
+    cursor: pointer;
+}
+.removed{
+    display: none;
+}

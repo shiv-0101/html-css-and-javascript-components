@@ -1,0 +1,33 @@
+body{
+    background: #222;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+.inner{
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 25px;
+    width: 300px;
+    clip-path: circle(10% at 90% 13%);
+    transition: all 0.6s ease-in-out;
+    cursor: pointer;
+}
+.inner:hover{
+    clip-path: circle(75%);
+    background: #34f8ff;
+}
+span{
+    float: right;
+    color: #000;
+    font-weight: bold;
+    transition: color 0.5s;
+    position: relative;
+    margin-right: 3%;
+}
+.inner:hover span{
+    opacity: 0;
+}

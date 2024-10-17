@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #222;
+}
+button{
+    padding: 8px 15px;
+    background: #ffffffd7;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+button:hover{
+    animation: animate 0.2s;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg) translateX(0px);
+    }
+    25%{
+        transform: rotate(-20deg) translateX(-10px);
+    }
+    50%{
+        transform: rotate(0deg) translateX(0px);
+    }
+    75%{
+        transform: rotate(20deg) translateX(10px);
+    }
+    100%{
+        transform: rotate(0deg) translateX(0px);
+    }
+}

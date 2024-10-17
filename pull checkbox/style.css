@@ -1,0 +1,53 @@
+body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.pullbar{
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 1.2rem;
+    height: 3.4rem;
+}
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 5px;
+}
+.slider:before{
+    position: absolute;
+    content: "";
+    height: .5em;
+    width: 2.4em;
+    border-radius: 5px;
+    left: -0.6em;
+    top: 0.2em;
+    background-color: #ffffff;
+    box-shadow: 0 6px 7px #00000070;
+    transition: .4s;
+}
+.slider:before, .slider:after{
+    content: "";
+    display: block;
+}
+.check:checked + .slider{
+    background-color: #00cb07;
+}
+.check:focus + .slider{
+    box-shadow: 0 0 1px #00cb07;
+}
+.check:checked + .slider::before{
+    transform: translateY(2.4em);
+}
+
+.pullbar .check{
+    opacity: 0;
+}

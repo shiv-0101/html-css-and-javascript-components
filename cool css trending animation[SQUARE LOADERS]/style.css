@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    min-height: 100vh;
+}
+.square{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-color: #1489ff;
+    opacity: .7;
+    animation: circulate 3s infinite;
+    transform: rotate(30deg);
+    margin-right: 1px;
+    padding: 5px;
+}
+@keyframes circulate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

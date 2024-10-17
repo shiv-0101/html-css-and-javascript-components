@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+}
+h1{
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+button{
+    padding: 10px 30px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: #4ac3ff;
+    outline: none;
+    border: none;
+    color: #fff;
+    margin-top: 3rem;
+    transition: .4s ease;
+}
+button:hover{
+    letter-spacing: 3px;
+}
+.inputsec{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.inputsec input{
+    color: #000;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    padding: 10px 10px;
+    border-bottom: 3px solid #4ac3ff;
+    font-size: 1rem;
+}
+.inputsec input::placeholder{
+    opacity: 0;
+}
+.inputsec label{
+    position: absolute;
+    padding-left: 10px;
+    margin-bottom: 4px;
+    cursor: pointer;
+    transform: translate(4px, -14px)
+    scale(1.02);
+    font-size: 1.1rem;
+    color: #363636;
+}
+.inputsec input,
+.inputsec label{
+    transition: 0.4s all ease;
+}
+
+.inputsec input:focus ~ label,
+.inputsec input:not(:placeholder-shown)
+~label{
+    transform: translate(10px, -35px) 
+    scale(0.9);
+    padding: 0;
+    color: #4ac3ff;
+}

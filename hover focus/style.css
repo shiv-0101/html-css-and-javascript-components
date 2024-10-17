@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #2c79f4, #040086);
+}
+.text{
+    display: flex;
+}
+h1 span{
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+    font-size: 8rem;
+    letter-spacing: 2rem;
+    filter: blur(10px);
+    transition: .2s;
+    cursor: pointer;
+}
+h1 span:hover{
+    filter: blur(0px);
+}

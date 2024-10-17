@@ -1,0 +1,31 @@
+body{
+    background: #1c1c1c;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 20%;
+}
+.btn {
+    font-size: 1.2rem;
+    padding: 1rem 2.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #131315;
+    color: #eaeaea;
+    font-weight: 700;
+    transition: 0.6s;
+    box-shadow: 0px 0px 60px #1f4c65;
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, #00000020, #0e0d0d66);
+  }
+  
+  .btn:active {
+    scale: 0.92;
+  }
+  
+  .btn:hover {
+    background: #021d4e;
+    background: linear-gradient(270deg, #005290ae 10%, #22e3f1df 60%);
+    color: rgb(4, 4, 38);
+  }

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    background-image: url(images/bg.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    height: 100vh;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 17rem;
+}
+.content{
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 35px 30px;
+    border-radius: 30px 0 0 30px;
+}
+.content h1{
+    color: #ffffff;
+    margin: 0;
+}
+.content p{
+    color: #ffffff;
+    margin: 10px 0;
+}
+.content h2{
+    color: #091832;
+}
+.image img{
+    width: 317px;
+    object-fit: cover;
+    height: 255px;
+    object-position: left;
+    border-radius: 0 30px 30px 0;
+}
+form{
+    margin-top: 10px;
+    display: flex;
+}
+::placeholder{
+    border: none;
+}
+.inputsec{
+    padding: 10px 20px;
+    border-radius: 20px 0 0 20px;
+    border: none;
+}
+button{
+    background: #091832;
+    color: #fff;
+    border-radius: 0px 20px 20px 20px;
+    padding: 10px 20px;
+    margin-left: -20px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+button:hover{
+    transform: scale(1.1);
+}

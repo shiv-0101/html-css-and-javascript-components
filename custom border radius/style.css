@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 18rem;
+    width: 20rem;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to bottom right, #08b9ff, #0852fd,#0303ba);
+    border: 2px solid black;
+    border-radius: 100px 0px 80px 0px;
+}   custom borders  01   02  03  04

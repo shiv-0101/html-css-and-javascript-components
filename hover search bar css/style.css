@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: #222;
+}
+form{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 35px;
+    border: 4px solid white;
+    padding: 5px;
+    box-shadow: 0px 0px 30px #084386;
+}
+input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 43px;
+    line-height: 30px;
+    display: none;
+    outline: 0;
+    border: 0;
+    font-size: 1.1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+.fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 43px;
+    height: 43px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #0c6cda;
+    text-align: center;
+    transition: all 1s;
+}
+.fa-search::before{
+    font-size: 1.3rem;
+}
+form:hover{
+    width: 200px;
+    cursor: pointer;
+}
+form:hover input{
+    display: block;
+}
+form:hover .fa{
+    background: #0c6cda;
+    color: #fff;
+}

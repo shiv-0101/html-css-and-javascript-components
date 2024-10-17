@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    min-height: 100vh;
+}
+.loader{
+    position: relative;
+    border-radius: 10px;
+    width: 400px;
+    height: 12px;
+    background: #fff;
+    -webkit-box-reflect: below 2px linear-gradient(transparent, #0005);
+}
+.loader::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #7109a9, #19a4ee, #920d49,
+    #05eee2, #b7b714, #32cd02ca, #c912d3, 
+    #c21c2a);
+    background-size: 500%;
+    animation: animate 20s linear infinite;
+    filter: blur(3px);
+}
+@keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    0%{
+        background-position: 500% 0;
+    }
+}

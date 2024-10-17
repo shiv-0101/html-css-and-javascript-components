@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RGB Color Generator | Frontend Mini Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <h1>RGB Color Generator</h1>
+      <p>R: <input type="range" id="red" min="0" max="255" value="0" /></p>
+      <p>G: <input type="range" id="green" min="0" max="255" value="0" /></p>
+      <p>B: <input type="range" id="blue" min="0" max="255" value="0" /></p>
+
+      <div id="color-box" style="width: 100px; height: 40px"></div>
+      <p id="color-code">Color code: rgb(0, 0, 0)</p>
+      <button id="copy-button">Copy</button>
+    </div>
+    <script src="main.js" type="text/javascript"></script>
+  </body>
+</html>

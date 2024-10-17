@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 50vh;
+    border-radius: 30px;
+    box-shadow: 10px 20px 20px rgba(0, 0 ,0,0.6);
+    background: linear-gradient(to bottom right, #1b4683,#3c9aa1 );
+}

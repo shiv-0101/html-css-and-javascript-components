@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.card{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    max-width: 50rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    border-radius: 15px;
+    background: linear-gradient(#0eb3ef, #081fd0);
+}
+.content img{
+    height: 250px;
+    object-fit: cover;
+}
+.content p{
+    color: #fff;
+    margin-left: 25px;
+    font-size: 1.2rem;
+}
+.content h1{
+    text-align: center;
+}
+@media  (max-width: 440px){
+    .content{
+        flex-direction: column;
+    }
+}

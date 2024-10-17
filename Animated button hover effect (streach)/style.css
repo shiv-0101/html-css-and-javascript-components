@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+button{
+    padding: 15px 20px;
+    font-size: 1rem;
+    background-color: #e5dd04;
+    cursor: pointer;
+    font-weight: bold;
+    color: #000a34dd;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all .3s ease-in;
+}
+button:hover{
+    background: radial-gradient(#f5dd00, #f0b709);
+    letter-spacing: 3px;
+}

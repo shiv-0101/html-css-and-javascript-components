@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    position: relative;
+    width:350px ;
+    height: 500px;
+    box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.27);
+    border-radius: 15px;
+    padding: 70px;
+    overflow: hidden;
+}
+.card h1{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 40px;
+}
+.card p{
+    font-size: 1.2rem;
+    margin-top: 40px;
+    line-height: 1.6rem;
+    text-align: center;
+}
+button{
+    padding: 10px 15px;
+    font-weight: bold;
+    background-color: #315bdb;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 5.2rem;
+}
+.ribbon{
+    position: absolute;
+    right: -65px;
+    top: 30px; 
+    text-align: center;
+    padding: 20px;   
+    transform: rotate(45deg);   
+    overflow: hidden;
+}
+.ribbon span{
+    padding: 10px 35px;
+    color: #fff;
+    font-weight: bold;
+    background: linear-gradient(#0ec8ed 0%, #8659f8 100% );
+    cursor: pointer;
+}
+.ribbon:hover span{
+    background: linear-gradient(#0ec8ed 100%, #8659f8 0% );
+}
